@@ -1,0 +1,78 @@
+/* line 1, ../../../app/stylesheets/custom.scss */
+.container {
+  width: 710px;
+}
+
+/* line 5, ../../../app/stylesheets/custom.scss */
+body {
+  background: #cff;
+}
+
+/* line 9, ../../../app/stylesheets/custom.scss */
+header {
+  padding-top: 20px;
+}
+/* line 11, ../../../app/stylesheets/custom.scss */
+header img {
+  padding: 1em;
+  background: #fff;
+}
+
+/* line 17, ../../../app/stylesheets/custom.scss */
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #fff;
+}
+/* line 22, ../../../app/stylesheets/custom.scss */
+section h1 {
+  font-size: 200%;
+}
+
+/* line 27, ../../../app/stylesheets/custom.scss */
+a {
+  color: #09c;
+  text-decoration: none;
+}
+/* line 30, ../../../app/stylesheets/custom.scss */
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+/* line 34, ../../../app/stylesheets/custom.scss */
+a:visited {
+  color: #069;
+}
+
+/* line 39, ../../../app/stylesheets/custom.scss */
+nav {
+  float: right;
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+/* line 46, ../../../app/stylesheets/custom.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 50, ../../../app/stylesheets/custom.scss */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+/* line 55, ../../../app/stylesheets/custom.scss */
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+/* line 59, ../../../app/stylesheets/custom.scss */
+nav ul li a:visited {
+  color: #09c;
+}
+/* line 62, ../../../app/stylesheets/custom.scss */
+nav ul li a:hover {
+  text-decoration: underline;
+}
