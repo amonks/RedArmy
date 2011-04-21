@@ -1,9 +1,7 @@
 %table.profile{:summary => "Profile information"}
 	%tr
 		%td.main
-			%h1
-				= gravatar_for @user
-				= @user.name
+			= gravatar_for @user
 		%td.sidebar.round
 			%strong
 				Name

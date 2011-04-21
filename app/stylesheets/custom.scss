@@ -40,7 +40,7 @@ nav {
 	float: right;
 	
 	background-color: white;
-	padding: 0 0.7em;
+	padding: 0;
 	white-space: nowrap;
 	
 	ul {
@@ -104,12 +104,12 @@ table.profile {
 }
 
 td.main {
-	width:70%;
+	width:60%;
 	padding: 1em;
 }
 
 td.sidebar {
-	width: 30%;
+	width: 40%;
 	padding: 1em;
 	vertical-align: top;
 	background: #ffc;
