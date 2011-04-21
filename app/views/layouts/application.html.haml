@@ -9,5 +9,8 @@
 		.container
 			= render 'layouts/header'
 			%section.round
+				= flash.each do |key, value|
+					.flash.#{key}
+					= value
 				= yield
 			= render 'layouts/footer'
