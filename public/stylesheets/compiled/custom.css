@@ -184,3 +184,12 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+/* line 169, ../../../app/stylesheets/custom.scss */
+.users ul {
+  margin-top: 1em;
+}
+/* line 172, ../../../app/stylesheets/custom.scss */
+.users li {
+  list-style: none;
+}

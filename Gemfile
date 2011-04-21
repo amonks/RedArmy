@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'compass'
 gem 'haml'
 gem 'gravatar_image_tag'
+gem 'will_paginate'
+gem 'faker'
 
 group :development do
 	gem 'rspec-rails'
