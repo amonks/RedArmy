@@ -56,4 +56,6 @@ class User < ActiveRecord::Base
     def secure_hash(string)
       Digest::SHA2.hexdigest(string)
     end
+    
+    validates :email, :presence => true, :format => { :with => email_regex }, :uniqueness => { :case_sensitive => false }
 end
