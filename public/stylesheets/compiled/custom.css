@@ -193,3 +193,62 @@ div.field, div.actions {
 .users li {
   list-style: none;
 }
+
+/* line 177, ../../../app/stylesheets/custom.scss */
+h1.topic {
+  margin-bottom: 0.3em;
+}
+
+/* line 181, ../../../app/stylesheets/custom.scss */
+table.topics {
+  margin-top: 1em;
+}
+/* line 183, ../../../app/stylesheets/custom.scss */
+table.topics tr {
+  height: 70px;
+}
+/* line 185, ../../../app/stylesheets/custom.scss */
+table.topics tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+/* line 190, ../../../app/stylesheets/custom.scss */
+table.topics tr td.topic {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+/* line 194, ../../../app/stylesheets/custom.scss */
+table.topics tr td.topic span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+/* line 204, ../../../app/stylesheets/custom.scss */
+div.user_info img {
+  padding-right: 0.1em;
+}
+/* line 207, ../../../app/stylesheets/custom.scss */
+div.user_info a {
+  text-decoration: none;
+}
+/* line 210, ../../../app/stylesheets/custom.scss */
+div.user_info span.user_name {
+  position: absolute;
+}
+/* line 213, ../../../app/stylesheets/custom.scss */
+div.user_info span.topics {
+  font-size: 80%;
+}
+
+/* line 218, ../../../app/stylesheets/custom.scss */
+form.new_topic {
+  margin-bottom: 2em;
+}
+/* line 220, ../../../app/stylesheets/custom.scss */
+form.new_topic textarea {
+  height: 4em;
+  margin-bottom: 0;
+}

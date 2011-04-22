@@ -1,4 +1,15 @@
 - if signed_in?
-	Welcome to the redarmy.es private forum. Unfortunately the forum itself doesn't actually exist yet, but it's coming soon.
+	%table.front{:summary => "For signed-in users"}
+		%tr
+			%td.main
+				%h1.topic
+					Create a topic:
+				= render 'shared/topic_form'
+				= render @topiclist
+			%td.sidebar.round
+				= render 'shared/user_info'
+		/ %tr
+		/ 	%ul.topics
+		/ 		= render @topics
 - else
 	= link_to "Enlist!", signup_path, :class=> "signup_button round"

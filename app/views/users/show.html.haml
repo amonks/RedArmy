@@ -2,6 +2,9 @@
 	%tr
 		%td.main
 			= gravatar_for @user
+			- unless @user.topics.empty?
+				%table.topics
+					= render @topiclist
 		%td.sidebar.round
 			%strong
 				Name
@@ -14,3 +17,7 @@
 			%strong
 				email
 			= @user.email
+			%br
+			%strong
+				Topics
+			= @user.topics.count

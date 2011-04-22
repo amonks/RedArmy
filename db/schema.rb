@@ -10,7 +10,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110421045221) do
+ActiveRecord::Schema.define(:version => 20110421081320) do
+
+  create_table "posts", :force => true do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.integer  "topic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "posts", ["topic_id"], :name => "index_posts_on_topic_id"
+  add_index "posts", ["user_id"], :name => "index_posts_on_user_id"
+
+  create_table "topics", :force => true do |t|
+    t.string   "title"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "topics", ["user_id"], :name => "index_topics_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"

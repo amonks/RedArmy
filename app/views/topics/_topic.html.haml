@@ -1,0 +1,8 @@
+%tr
+	%td.topic
+		%span.title
+			= topic.title
+		%span.timestamp
+			Created
+			= time_ago_in_words(topic.created_at)
+			ago

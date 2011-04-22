@@ -47,9 +47,9 @@ class UsersController < ApplicationController
   end
   
   def show
-    # @users = User.paginate(:page => params[:page])
     @user = User.find(params[:id])
     @title = @user.name
+    @topiclist = @user.topics.all
   end
   
   def destroy
@@ -58,12 +58,7 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
   
-  private
-  
-    def authenticate
-      deny_access unless signed_in?
-    end
-    
+  private  
     def correct_user
       @user = User.find(params[:id])
       redirect_to(root_path) unless current_user?(@user)

@@ -1,0 +1,10 @@
+%tr
+	%td.topic
+		%span.user
+			= link_to topic.user.name, topic.user
+		%span.title
+			= topic.title
+		%span.timestamp
+			Posted
+			= time_ago_in_words(topic.created_at)
+			ago
