@@ -5,7 +5,8 @@
 				%h1.topic
 					Create a topic:
 				= render 'shared/topic_form'
-				= render @topiclist
+				- unless @topiclist.empty?
+					= render @topiclist
 			%td.sidebar.round
 				= render 'shared/user_info'
 		/ %tr
